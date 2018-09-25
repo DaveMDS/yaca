@@ -1,2 +1,2 @@
-# yaca
+# Yaca
 Yet Another Cube Applet
