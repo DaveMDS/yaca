@@ -1,0 +1,86 @@
+
+/*****  Theme: Default  *****/
+.yaca {
+  display: inline-block;
+}
+.yaca .face {
+  padding: 3px;
+  grid-gap: 4px;
+  background-color: #222;
+}
+.yaca .tile {
+  border-radius: 6px;
+}
+.yaca .tile.w { background-color:#FFFFFFFF; } /* white  (up)    */
+.yaca .tile.y { background-color:#FFFF00FF; } /* yellow (down)  */
+.yaca .tile.g { background-color:#11AA00FF; } /* green  (front) */
+.yaca .tile.b { background-color:#2040D0FF; } /* blue   (back)  */
+.yaca .tile.r { background-color:#D00000FF; } /* red    (right) */
+.yaca .tile.o { background-color:#EE8800FF; } /* orange (left)  */
+.yaca .tile.n { background-color:#000000FF; } /* black          */
+.yaca .tile.d { background-color:#555555FF; } /* dark gray      */
+.yaca .tile.l { background-color:#DDDDDDFF; } /* light gray     */
+.yaca .tile.k { background-color:#111111FF; } /* black          */
+.yaca .tile.c { background-color:#0099FFFF; } /* cyan           */
+.yaca .tile.p { background-color:#FF99CCFF; } /* pink           */
+.yaca .tile.m { background-color:#FF0099FF; } /* magenta        */
+
+
+/*****  Theme: Debug  *****/
+.yaca.debug {
+  border: 2px dotted green;
+  font-family: sans-serif;
+  font-size: 36px;
+}
+.yaca.debug .scene {
+  border: 10px solid #CCC;
+}
+.yaca.debug .face.front:after { content: "Front"; position: absolute; }
+.yaca.debug .face.back:after  { content: "Back";  position: absolute; }
+.yaca.debug .face.up:after    { content: "Up";    position: absolute; }
+.yaca.debug .face.down:after  { content: "Down";  position: absolute; }
+.yaca.debug .face.left:after  { content: "Left";  position: absolute; }
+.yaca.debug .face.right:after { content: "Right"; position: absolute; }
+.yaca.debug .face {
+  background-color: #F004;
+  border: 13px dashed black;
+}
+.yaca.debug .tile {
+  margin: 15px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+
+/*****  Theme: White  *****/
+.yaca.white .face {
+  background-color: white;
+}
+.yaca.white .tile {
+  border: 1px solid #AAA;
+}
+.yaca.white .tile.w {
+  background-color: #333;
+}
+
+
+/*****  Theme: Opaque  *****/
+.yaca.opaque .face {
+  background-color: #3333;
+}
+.yaca.opaque .tile {
+  border: 0px solid black;
+  opacity: 0.7;
+}
+
+
+/*****  Theme: Flat  *****/
+.yaca.flat .face {
+  border: 0;
+  padding: 0;
+  grid-gap: 0;
+}
+.yaca.flat .tile {
+  border: 1px solid #2222;
+  border-radius: 0;
+}
